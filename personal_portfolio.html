@@ -7,68 +7,138 @@ to save my projects so that others can be able to check them out..-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Personal portfolio</title>
 </head>
 <body>
+   <div class="container-fluid">
     <header>
-        <nav id="navbar">
-            <h1>Portfo<span>lio</span></h1>
-            <ul>
-                <li><a href="#home"><i class="fa fa-home"></i></i>Home</a></li>
-                <li><a href="#about-me"><i class="fa fa-user"></i>About me</a></li>
-                <li><a href="https://github.com/rodgers-munene"><i class="fa fa-github"></i>My Git</a></li>
-                <li><a id="profile-link" target="_blank"><i class="fa fa-briefcase">  Services</i></a></li>
-                <li><a href="#contact"><i class="fa fa-phone"></i>Contact Me</a></li>
+        <nav class="nav-bar">
+            <h1>R,<span>M</span></h1>
+            <ul class="nav-links">
+                <li><a class="home" href="#intro"><i class="fa fa-home"></i>Home</i></a></li>
+                <li><a class="home" href="#about-me"> <i class="fa fa-user"></i>About me</i></a></li>
+                <li><a class="home" href="https://github.com/rodgers-munene"> <i class="fa fa-github"></i>My git</i></a></li>
+                <li><a class="home" href="#projects"> <i class="fa fa-briefcase"></i>Projects</i></a></li>
+                <li><a class="home" href="#"><i class="fa fa-phone"></i>Contact me</i></a></li>
+            </ul><a href="#"><i class="fa fa-"></i></a>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
             </ul>
         </nav>
     </header>
-    <div id="#main-div">
-        <main>
-            <div id="welcome-section"class="intro" id="home">
-                <h1><span>I,m</span></h1>
-                <h1>Rodgers <span>Munene</span></h1>
-                <h2>A <span>web</span> developer</h2>
-                <button>Read CV</button>
-            </div>
-            <div id="about-me">
-                <h1>About <span>me</span></h1>
-                <p> Welcome to my portfolio website. I am an intermediate web developer currently pursuing my Bachelor's
-                    degree in Computer science in The Dedan Kimathi Univestity of Technology. I have developed many types 
-                    of front-ends for several pages including marketing pages, abstracts and Tribute pages. 
-                </p>
-                <p>I'm <span>passionate</span> about cutting edge, pixel perfect, beautiful interfaces and intiutively implemented ux. I also
-                    love to craft solid and scalable front-end projects with greater user experiences. I have recently become 
-                    a certified web developer in freeCodeCamp. In addition to the technical expertise, I am a <span>collaborative</span>
-                    team player who values open communication and continuous learning. I enjoy working with cross-function teams
-                    to bring projects to life and am always looking for new challenges to push my skills to the next level. 
-                </p>
-            </div>
-            <h1 class="name">My <span>Projects</span></h1>
-            <div id="projects" class="my-works">
-                <div class="project-tile">
-                    <a href="#"><img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="tribute page" width="320px" height="350px"/></a>
+    <main>
+        <div id="intro" class="main-intro">
+            <div class="intro-div">
+                <div class="intro-text">
+                     <h1>Hey, I'm Rodgers</h1>
+                     <p>A software designer and developer based <br> in Kenya. I create bespoke applications <br> to help people go further <br>
+                         online. </p>
+                     <a href="https://github.com/rodgers-munene?tab=repositories"><button class="btn btn-primary" t>My projects</button></a>
+                     <div class="intro-text-shade"></div>
                 </div>
-                <div class="project-tile">
-                    <a href="#"><img src="https://www.frontendpractice.com/_next/image?url=%2Fcard%2FC2-bonsai.png&w=640&q=100" alt="Bonsai" width="320px" height="350px"></a>
+             </div>
+             <div class="intro-pic"><img src="./assets/hacker.jpg" alt=""></div>
+             <div class="intro-shade"></div>
+        </div>
+        <div class="about-me" id="about-me">
+            <div class="about-me-pic">
+                <img src="./assets/hacker.jpg" alt="">
+            </div>
+            <div class="about-me-text">
+                <h2>About Me</h2>
+                <p>I have always been fascinated by technology and its ability to solve complex problems and improve people's lives. From a young age, I was drawn to computers and programming, and this interest has only grown stronger over the years.</p>
+                <p> I am currently pursuing a degree in computer science, where I have gained a solid foundation in various programming languages, algorithms, data structures, and software development methodologies. I have also had the opportunity to work on several projects, both individually and as part of a team, which has allowed me to apply my knowledge in practical settings.</p>
+          
+            </div>
+        </div>
+        
+        <div class="stack">
+            <h1 class="text-center"><span>My programming stack</span></h1>
+            <div class="stack-container">
+                <div>
+                    <img src="./assets/c.png" alt="">
+                    <p>C</p>
                 </div>
-                <div class="project-tile">
-                    <a href="#"><img src="https://www.frontendpractice.com/_next/image?url=%2Fcard%2FC2-abstract.png&w=640&q=100" alt="Abstract" width="320px" height="350px"></a>
+                <div>
+                    <img src="./assets/cpp.png" alt="">
+                    <p>C++</p>
+                </div>
+                <div>
+                    <img src="./assets/css3.png" alt="">
+                    <p>CSS3</p>
+                </div>
+                <div>
+                    <img src="./assets/html5.png" alt="">
+                    <p>HTML5</p>
+                </div>
+                <div>
+                    <img src="./assets/java.png" alt="">
+                    <p>Java</p>
+                </div>
+                <div>
+                    <img src="./assets/javascript.png" alt="">
+                    <p>JavaScript</p>
+                </div>
+                <div>
+                    <img src="./assets/mariadb.png" alt="">
+                    <p>MariaDB </p>
+                </div>
+                <div>
+                    <img src="./assets/mysql.png" alt="">
+                    <p>SQL</p>
+                </div>
+                <div>
+                    <img src="./assets/postgre-sql.png" alt="">
+                    <p>Postgre-SQL</p>
+                </div>
+                <div>
+                    <img src="./assets/python.png" alt="">
+                    <p>Python</p>
+                </div>
+                <div>
+                    <img src="./assets/react.png" alt="">
+                    <p>React Js</p>
+                </div>
+                <div>
+                    <img src="./assets/redux.png" alt="">
+                    <p>Redux javascript</p>
                 </div>
             </div>
-        </main>
-        <footer>
-            <div id="contact">
-                <h1>Let's work together...</h1>
-                <p>How do you take your coffee</p>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/rodgers-munene-56958b269"><i class="fa fa-linkedin-square"></i>LinkedIn</a></li>
-                    <li><a href="https://twitter.com/___rodger_?t=y-uLC3Fc_V88071RqyAWwA&s=09"><i class="fa fa-twitter"></i>Twitter</a></li>
-                    <li><a href="https://github.com/rodgers-munene"><i class="fa fa-github"></i>Github</a></li>
-                    <li><a href="munenerodgers@gmail.com"><i class="fa fa-envelope-o"></i>Email</a></li>
-                </ul>
+        </div>
+
+        <div class="projects" id="projects">
+            <h1><span>My Projects</span></h1>
+            <a href="https://rodgers-munene.github.io/Age-Calculator-app/"><div class="age-calc"> 
+                <img src="./assets/Screenshot from 2023-11-01 23-57-49.png" alt="" width="400" height="400">
+                <p class="age-calc-text">Age Calculator App. <br> In this project I utilized JavaScript dates logic to be able to calculate the users age by just inputing their birth date.</p>
+            </div></a>
+            <a href="https://rodgers-munene.github.io/react-calculator/"><div class="react-calc">
+                <img src="./assets/Screenshot from 2023-11-01 23-59-23.png" alt="" width="400" height="400">
+                <p class="react-calc-text">React Calculator. <br> In this project i utilized to utilize simple mathematical logic to be able to create a simple calculator using react js</p>
+            </div></a>
+            <a href="https://rodgers-munene.github.io/quote-machine/"><div class="quote-machine">
+                <img src="./assets/Screenshot from 2023-11-02 00-03-44.png" alt="" width="400" height="400">
+                <p class="quote-machine-text">Quote Machine. <br>In this project I utilized http request in JavaScript to acquire quotes from an API and display them to the user.</p>
+            </div></a>
+        </div>
+
+        <div class="footer">
+            <div class="thank-message">
+                <h4 class="text-center"><span>Thank you for Visiting!</span></h4>
             </div>
-        </footer>
-    </div>
+            <div class="contacts">
+                <a href="https://twitter.com/___rodger_"><i class="fa fa-twitter"> Twitter </i></a>
+                <a href="https://www.instagram.com/iam.rodgers_/"><i class="fa fa-instagram"> Instagram</i></a>
+                <a href="https://www.linkedin.com/in/rodgers-munene-56958b269/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin"> LinkedIn </i></a>
+                <a href=""><i class="fa fa-envelope-o"> munenerodgers72@gmail.com</i></a>
+            </div>
+        </div>
+    </main>
+   </div>
+   <!-- <script src="portfolio.js"></script> -->
 </body>
 </html>
